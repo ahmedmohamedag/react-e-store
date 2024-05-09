@@ -4,7 +4,6 @@ import { textSlice } from '../utils/functions';
 import Button from './Button';
 import Image from './Image';
 
-
 const Card = ({product}:{product:IProduct}) => {
   const {imgURL,colors,description,price,title,id,category}=product
   
@@ -34,7 +33,6 @@ const Card = ({product}:{product:IProduct}) => {
       </div>
       <div className="flex  space-x-2 my-4 text-white">
         <Button width='w-full' className="  bg-green-500 " onClick={()=>{
-            alert(id)
         }}>Edite</Button>
         <Button width='w-full'  className=" bg-red-500 ">Delete</Button>
       </div>
